@@ -53,6 +53,7 @@ abstract class SendViewModelBase with Store {
     outputs.add(Output(_wallet, _settingsStore, _fiatConversationStore, () => selectedCryptoCurrency));
   }
 
+  
   @observable
   ExecutionState state;
 
@@ -217,7 +218,6 @@ abstract class SendViewModelBase with Store {
             : await transactionDescriptionBox.add(TransactionDescription(
                 id: pendingTransaction!.id, transactionNote: note));
       }
-
       state = TransactionCommitted();
     } catch (e) {
       state = FailureState(e.toString());

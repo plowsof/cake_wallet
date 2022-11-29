@@ -1,4 +1,6 @@
 import 'dart:ui';
+
+import 'package:cake_wallet/entities/request_review.dart';
 import 'package:cake_wallet/entities/fiat_currency.dart';
 import 'package:cake_wallet/src/screens/dashboard/widgets/sync_indicator_icon.dart';
 import 'package:cake_wallet/src/screens/send/widgets/send_card.dart';
@@ -418,8 +420,10 @@ class SendPage extends BasePage {
                                     alertContent: S.of(context).send_success(
                                         sendViewModel.selectedCryptoCurrency.toString()),
                                     buttonText: S.of(context).ok,
-                                    buttonAction: () =>
-                                        Navigator.of(context).pop());
+                                    buttonAction: () {
+                                        Navigator.of(context).pop();    
+                                        reviewApp();
+                                    });
                               }
 
                               return Offstage();
