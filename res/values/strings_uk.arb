@@ -651,5 +651,12 @@
   "use_suggested": "Використати запропоноване",
   "do_not_share_warning_text" : "Не повідомляйте їх нікому, включно зі службою підтримки.\n\nВони вкрадуть ваші гроші!",
   "help": "допомога",
+  "privacy_settings": "Налаштування конфіденційності",
+  "privacy": "Конфіденційність",
+  "display_settings": "Налаштування дисплея",
+  "other_settings": "Інші налаштування",
+  "require_pin_after": "Вимагати PIN після",
+  "always": "Завжди",
+  "minutes_to_pin_code": "${minute} хвилин",
   "disable_exchange": "Вимкнути exchange"
 }

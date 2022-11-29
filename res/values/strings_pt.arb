@@ -652,5 +652,12 @@
   "use_suggested": "Uso sugerido",
   "do_not_share_warning_text" : "Não os compartilhe com mais ninguém, incluindo suporte.\n\nEles vão roubar seu dinheiro!",
   "help": "ajuda",
+  "privacy_settings": "Configurações de privacidade",
+  "privacy": "Privacidade",
+  "display_settings": "Configurações de exibição",
+  "other_settings": "Outras configurações",
+  "require_pin_after": "Exigir PIN após",
+  "always": "sempre",
+  "minutes_to_pin_code": "${minute} minutos",
   "disable_exchange": "Desativar troca"
 }

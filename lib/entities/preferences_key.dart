@@ -26,6 +26,9 @@ class PreferencesKey {
   static const transactionsCommitted = 'transactions_committed';
   static const hasReviewedApp = 'has_reviewed_app';
   static const moneroWalletPasswordUpdateV1Base = 'monero_wallet_update_v1';
+  static const pinTimeOutDuration = 'pin_timeout_duration';
+  static const lastAuthTimeMilliseconds = 'last_auth_time_milliseconds';
+
 
   static String moneroWalletUpdateV1Key(String name)
     => '${PreferencesKey.moneroWalletPasswordUpdateV1Base}_${name}';

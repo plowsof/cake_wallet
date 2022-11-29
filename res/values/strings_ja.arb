@@ -652,5 +652,12 @@
   "use_suggested": "推奨を使用",
   "do_not_share_warning_text" : "サポートを含め、これらを他の誰とも共有しないでください。\n\n彼らはあなたのお金を盗みます！",
   "help": "ヘルプ",
+  "privacy_settings": "プライバシー設定",
+  "privacy": "プライバシー",
+  "display_settings": "表示設定",
+  "other_settings": "その他の設定",
+  "require_pin_after": "後に PIN が必要",
+  "always": "いつも",
+  "minutes_to_pin_code": "${minute} 分",
   "disable_exchange": "交換を無効にする"
 }
