@@ -48,7 +48,7 @@
   "outgoing" : "Вихідні",
   "transactions_by_date" : "Сортувати по даті",
   "trades" : "Торгові операції",
-  "filters" : "Фільтр",
+  "filters" : "Фільтрувати по",
   "today" : "Сьогодні",
   "yesterday" : "Вчора",
   "received" : "Отримані",
@@ -651,5 +651,7 @@
   "use_suggested": "Використати запропоноване",
   "do_not_share_warning_text" : "Не повідомляйте їх нікому, включно зі службою підтримки.\n\nВони вкрадуть ваші гроші!",
   "help": "допомога",
+  "all_transactions": "Всі транзакції",
+  "all_trades": "Всі операції",
   "disable_exchange": "Вимкнути exchange"
 }
