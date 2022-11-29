@@ -1,8 +1,7 @@
 name: PR Test Build
 
 on:
-  pull_request:
-    branches: [ main ]
+  push:
 
 jobs:
   test:
@@ -108,9 +107,8 @@ jobs:
 #              --token ${{ secrets.APP_CENTER_TOKEN }} \
 #              --quiet
 
-      - name: Send Test APK
-        run: |
-          cd /opt/android/cake_wallet
-          var=$(curl --upload-file build/app/outputs/apk/release/app-release.apk https://transfer.sh/app-release.apk)
-          curl ${{ secrets.SLACK_WEB_HOOK }} -H "Content-Type: application/json" -d '{"apk_link": "'"$var"'","ticket": "'"$GITHUB_HEAD_REF"'"}'
-
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: ${{ github.event.head_commit.message }}
+          path: /opt/android/cake_wallet/build/app/outputs/apk/release/app-release.apk
